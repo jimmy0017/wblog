@@ -25,6 +25,14 @@ SITE_ADDRESS: 'yafeilee.me'
 #Website Year for footer display
 SITE_YEAR: '© 2012 - 2016'
 
+#Welcome Information
+WELCOME_SENTENCE_CN: '我是李亚飞, WinDy 是我的网名.'
+WELCOME_AREA_CN: '技术, 创业, 生活'
+WELCOME_LOCATION_CN: '中国 - 深圳 - 南山'
+WELCOME_SENTENCE_EN: 'I'm Li Yafei, WinDy is my English name.'
+WELCOME_AREA_EN: 'Web Development, Startups, Life'
+WELCOME_LOCATION_EN: 'Nan Shan District, ShenZhen, China'
+
 # optional
 # google analytics, blank it if you don't need
 GOOGLE: ''
