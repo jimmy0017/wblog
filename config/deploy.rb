@@ -14,11 +14,8 @@ require 'mina/logs'
 # They will be linked in the 'deploy:link_shared_paths' step.
 set :shared_paths, ['config/database.yml', 'config/application.yml', 'log', 'tmp', 'public/uploads', 'public/personal' ]
 
-# rvm path
-set :rvm_path, '/usr/local/rvm/scripts/rvm'
-
 task :environment do
-  invoke :'rvm:use[2.2.3]'
+  invoke :'rvm:use[2.3.1]'
 end
 
 task :setup => :environment do
