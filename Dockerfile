@@ -10,8 +10,6 @@ RUN apk --update add --virtual build-dependencies \
                                tzdata \
                                && rm -rf /var/cache/apk/*
 
-RUN bundle config build.nokogiri
-
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 
