@@ -43,6 +43,7 @@ gem 'mina-sidekiq', require: false
 gem 'mina-puma', require: false
 gem 'mina-logs', require: false
 gem 'browser_warrior'
+gem 'rack-cors', :require => 'rack/cors'
 
 group :development do
   gem 'guard'
@@ -53,7 +54,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 
-  gem 'rack-cors', :require => 'rack/cors'
+
 end
 
 group :test do
