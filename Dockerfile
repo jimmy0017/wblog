@@ -14,7 +14,9 @@ RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 
 COPY . /usr/src/app
+COPY ./config/database.yml.example /usr/src/app/config/database.yml
 
 RUN gem update bundler
-RUN bundle install --path vendor/bundle --without development test doc --deployment --jobs=4
+RUN bundle install --path vendor/bundle --without development test doc --deployment
+# --jobs=4
 RUN bundle exec rake assets:precompile
